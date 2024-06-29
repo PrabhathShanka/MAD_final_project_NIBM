@@ -13,7 +13,13 @@
         android:id="@+id/getStartedBtn"
         android:layout_width="164dp"
         android:layout_height="46dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="541dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="144dp"
         android:text="Get Started"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="541dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
