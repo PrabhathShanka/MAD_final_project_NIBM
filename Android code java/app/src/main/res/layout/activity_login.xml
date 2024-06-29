@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/getstartedimg"
     tools:context=".Login">
 
     <EditText
@@ -12,13 +13,16 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
+        android:foregroundTint="#FFFBFB"
+        android:textColorHint="#FFFFFF"
         android:hint="Enter Email"
-        android:textSize="20dp"
         android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/password"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
@@ -27,12 +31,14 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
         android:hint="Enter Password"
-        android:textSize="20dp"
         android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/registerBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fullName"
-        app:layout_constraintBottom_toTopOf="@id/registerBtn"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
@@ -42,6 +48,7 @@
         android:layout_marginHorizontal="32dp"
         android:backgroundTint="#FFC107"
         android:text="Login"
+        android:textColor="#040404"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@id/createText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,11 +61,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Here? Create Account"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/registerBtn"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
-</androidx.constraintlayout.widget.ConstraintLayout>
 
+</androidx.constraintlayout.widget.ConstraintLayout>
