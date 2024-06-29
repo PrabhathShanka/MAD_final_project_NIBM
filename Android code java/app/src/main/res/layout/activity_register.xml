@@ -8,26 +8,26 @@
     tools:context=".Register">
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/password"
         android:layout_width="396dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
         android:ems="10"
+        android:hint="Password"
         android:inputType="text"
-        android:text="PassWord"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="325dp" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="245dp"
-        android:layout_height="0dp"
+        android:layout_width="160dp"
+        android:layout_height="33dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
-        android:fontFamily="serif"
-        android:text="Authenticater APP"
+        android:layout_marginTop="56dp"
+        android:text="E-ChargeZone"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,42 +40,42 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="139dp" />
+        tools:layout_editor_absoluteY="106dp" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="392dp"
-        android:layout_height="38dp"
+        android:id="@+id/fullName"
+        android:layout_width="394dp"
+        android:layout_height="49dp"
         android:ems="10"
+        android:hint="Full Name"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="225dp" />
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="213dp" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="392dp"
-        android:layout_height="38dp"
+        android:id="@+id/Email"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:ems="10"
+        android:hint="Email"
         android:inputType="text"
-        android:text="Email"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="274dp" />
+        tools:layout_editor_absoluteY="262dp" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/phone"
         android:layout_width="386dp"
         android:layout_height="41dp"
         android:layout_marginStart="16dp"
         android:ems="10"
+        android:hint="Phone Number"
         android:inputType="text"
-        android:text="PassWord"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="395dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/registerBtn"
         android:layout_width="288dp"
         android:layout_height="51dp"
         android:text="Register"
@@ -86,10 +86,10 @@
         android:id="@+id/textView4"
         android:layout_width="197dp"
         android:layout_height="32dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="168dp"
         android:text="Alrady resistered? Login Here"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="101dp" />
+        tools:layout_editor_absoluteX="125dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
