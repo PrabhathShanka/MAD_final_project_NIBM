@@ -7,11 +7,89 @@
     android:layout_height="match_parent"
     tools:context=".Register">
 
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="396dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="PassWord"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:text="Authenticater APP"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="186dp"
+        android:layout_height="53dp"
+        android:text="Create New Account"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="392dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="392dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="386dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="PassWord"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="395dp" />
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="81dp" />
+        android:id="@+id/button2"
+        android:layout_width="288dp"
+        android:layout_height="51dp"
+        android:text="Register"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="197dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="164dp"
+        android:text="Alrady resistered? Login Here"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="101dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
