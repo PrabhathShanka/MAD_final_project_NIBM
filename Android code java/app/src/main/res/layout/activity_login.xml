@@ -42,7 +42,7 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
-        android:id="@+id/registerBtn"
+        android:id="@+id/loginBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
