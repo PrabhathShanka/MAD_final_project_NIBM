@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -12,7 +14,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Login extends AppCompatActivity {
+
+    EditText mEmail,mPassword;
+    Button mLoginBtn;
+    TextView mCreateBtn;
+    ProgressBar progressBar;
+    FirebaseAuth fAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +46,13 @@ public class Login extends AppCompatActivity {
             }
 
         });
+
+        mEmail = findViewById(R.id.Email);
+        mPassword = findViewById(R.id.password);
+        progressBar = findViewById(R.id.progressBar);
+        fAuth = FirebaseAuth.getInstance();
+        mLoginBtn = findViewById(R.id.loginBtn);
+        mCreateBtn = findViewById(R.id.createText);
 
     }
 }
