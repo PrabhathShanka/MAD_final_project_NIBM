@@ -5,26 +5,122 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/getstartedimg"
     tools:context=".Dashboard">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="136dp"
-        android:text="Welcome to Dshboard"
+        android:text="Welcome to Dashboard"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="165dp"
         android:text="LOGOUT"
+        android:textColor="#000000"
+        android:background="@android:color/white"
+        android:onClick="logout1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        android:onClick="logout1"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- First Row of Buttons -->
+    <Button
+        android:id="@+id/addVehicleButton"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:text="Add Vehicle"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bookAppointmentsButton"
+        app:layout_constraintBottom_toTopOf="@+id/settingsButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/bookAppointmentsButton"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:text="Book Appointments"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/addVehicleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/settingsButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Second Row of Buttons -->
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:text="Settings"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/addVehicleButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/aboutButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:text="About"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/bookAppointmentsButton"
+        app:layout_constraintStart_toEndOf="@+id/settingsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
