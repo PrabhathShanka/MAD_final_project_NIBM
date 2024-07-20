@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_profile"
+    android:background="@drawable/getstartedimg">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fullName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:hint="Full Name"
+        android:textSize="20sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:hint="Email"
+        android:textSize="20sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/fullName"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:hint="Phone Number"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintBottom_toTopOf="@+id/saveBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:backgroundTint="#09FF01"
+        android:text="Save Changes"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
