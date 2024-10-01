@@ -1,6 +1,8 @@
 package com.example.madproject;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,11 @@ public class book_appointment extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void Back(View view) {
+        Intent intent = new Intent(getApplicationContext(), Dashboard1.class);
+        startActivity(intent);
+        finish();
     }
 }

@@ -27,8 +27,9 @@ public class settings extends AppCompatActivity {
     }
 
     public void Back(View view) {
-        FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(getApplicationContext(), Dashboard1.class));
+        Intent intent = new Intent(getApplicationContext(), Dashboard1.class);
+        startActivity(intent);
         finish();
     }
+
 }
