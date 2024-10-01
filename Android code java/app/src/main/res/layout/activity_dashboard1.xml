@@ -9,19 +9,23 @@
     tools:context=".Dashboard1">
 
 
-
     <TextView
         android:id="@+id/welcomeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="48dp"
         android:text="Welcome to E-ChargeZone"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ptofileEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="32dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptofileName"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/addVehicleBtn"
@@ -122,57 +126,53 @@
         android:id="@+id/ptofileEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="8dp"
         android:text="Your Email Address"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ptofileName" />
+        app:layout_constraintBottom_toTopOf="@+id/ptofilePhone"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="128dp"
-        android:text="Your Profile"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="Hi "
         android:textColor="#FFFFFF"
         android:textColorLink="#FDFDFD"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/addVehicleBtn"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeTitle"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/ptofileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="156dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="6dp"
         android:text="Your Name"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/ptofilePhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="38dp"
         android:text="Your Phone Number"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ptofileEmail" />
+        app:layout_constraintBottom_toTopOf="@+id/addVehicleBtn"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
