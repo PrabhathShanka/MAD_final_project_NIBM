@@ -74,7 +74,8 @@ public class Dashboard1 extends AppCompatActivity {
     }
 
     public void About_Us(View view) {
-        startActivity(new Intent(getApplicationContext(), about_us.class));
+//        startActivity(new Intent(getApplicationContext(), about_us.class));
+        startActivity(new Intent(getApplicationContext(), ViewVehiclesActivity.class));
     }
 
     public void Add_Vehicle(View view) {
