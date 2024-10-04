@@ -2,36 +2,36 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view_vehicles">
-
-
+    android:background="#16261D"
+    tools:context=".ViewVehiclesActivity">
 
         <TextView
             android:id="@+id/noVehiclesText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="No vehicles registered yet."
-            android:visibility="gone"
-            android:textSize="18sp"
             android:textColor="#FF0000"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="18sp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/vehicleRecyclerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintTop_toBottomOf="@+id/noVehiclesText"
-            app:layout_constraintStart_toStartOf="parent"
+            android:background="#112418"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noVehiclesText" >
 
 
 
 
+        </androidx.recyclerview.widget.RecyclerView>
 </androidx.constraintlayout.widget.ConstraintLayout>

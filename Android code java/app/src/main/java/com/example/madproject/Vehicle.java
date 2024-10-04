@@ -1,6 +1,5 @@
 package com.example.madproject;
 
-
 public class Vehicle {
     private String vehicleModel;
     private String licensePlate;
@@ -30,4 +29,3 @@ public class Vehicle {
         this.licensePlate = licensePlate;
     }
 }
-

@@ -1,6 +1,5 @@
 package com.example.madproject;
 
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -17,6 +16,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
@@ -54,7 +54,7 @@ public class ViewVehiclesActivity extends AppCompatActivity {
 
         // Fetch vehicles from Firestore
         fStore.collection("vehicles")
-                .whereEqualTo("userID", userID)  // Ensure you query for vehicles based on the userID
+                .whereEqualTo("userID", userID)
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
@@ -64,16 +64,11 @@ public class ViewVehiclesActivity extends AppCompatActivity {
                         }
 
                         if (value != null && !value.isEmpty()) {
-                            // Clear the list first to avoid duplication
                             vehicleList.clear();
-
-                            // Iterate through all documents and add them to the list
                             for (DocumentSnapshot doc : value.getDocuments()) {
                                 Vehicle vehicle = doc.toObject(Vehicle.class);
-                                vehicleList.add(vehicle);  // Add each vehicle to the list
+                                vehicleList.add(vehicle);
                             }
-
-                            // Notify the adapter of data changes
                             vehicleAdapter.notifyDataSetChanged();
                             noVehiclesText.setVisibility(View.GONE); // Hide "no vehicles" message
                         } else {

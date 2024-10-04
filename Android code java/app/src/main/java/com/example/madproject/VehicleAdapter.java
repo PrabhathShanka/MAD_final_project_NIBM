@@ -1,6 +1,5 @@
 package com.example.madproject;
 
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,4 +47,3 @@ public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.VehicleV
         }
     }
 }
-
