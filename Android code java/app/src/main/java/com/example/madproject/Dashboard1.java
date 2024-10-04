@@ -21,7 +21,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class Dashboard1 extends AppCompatActivity {
 
-    TextView fullName, email, phone;
+    TextView fullName;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
@@ -41,8 +41,7 @@ public class Dashboard1 extends AppCompatActivity {
 
         // Initialize views
         fullName = findViewById(R.id.ptofileName);
-        phone = findViewById(R.id.ptofilePhone);
-        email = findViewById(R.id.ptofileEmail);
+
 
         // Initialize Firebase Auth and Firestore
         fAuth = FirebaseAuth.getInstance();
@@ -56,9 +55,7 @@ public class Dashboard1 extends AppCompatActivity {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
                 if (value != null && value.exists()) {
-                    phone.setText(value.getString("phone"));
                     fullName.setText(value.getString("fName"));
-                    email.setText(value.getString("email"));
                 } else if (error != null) {
                     // Handle the error
                     error.printStackTrace();
@@ -75,7 +72,7 @@ public class Dashboard1 extends AppCompatActivity {
 
     public void About_Us(View view) {
 //        startActivity(new Intent(getApplicationContext(), about_us.class));
-        startActivity(new Intent(getApplicationContext(), ViewVehiclesActivity.class));
+        startActivity(new Intent(getApplicationContext(), about_us.class));
     }
 
     public void Add_Vehicle(View view) {
@@ -88,5 +85,10 @@ public class Dashboard1 extends AppCompatActivity {
 
     public void settings(View view) {
         startActivity(new Intent(getApplicationContext(), settings.class));
+    }
+
+    public void view_vehicle(View view) {
+//        startActivity(new Intent(getApplicationContext(), about_us.class));
+        startActivity(new Intent(getApplicationContext(), ViewVehiclesActivity.class));
     }
 }
